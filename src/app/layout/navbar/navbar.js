@@ -6,9 +6,9 @@ const Navbar = () => {
         <div>
             <ul>
                 <Navitem name='Home' url='/' />
-                <Navitem name='About' url='/about' />
-                <Navitem name='Services' url='/services' />
-                <Navitem name='Contact' url='/contact' />
+                <Navitem name='About' url='about' />
+                <Navitem name='Services' url='services' />
+                <Navitem name='Contact' url='contact' />
             </ul>
         </div>
     )

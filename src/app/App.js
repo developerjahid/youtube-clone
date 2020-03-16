@@ -11,16 +11,16 @@ class App extends Component{
   render() {
     return (
       <Fragment>
-        <Layout>
-          <Router>
+        <Router>
+          <Layout>
             <Routes>
-              <Route exact path='/' element={ <Home />} />
-              <Route path='about' element={ <About />} />
-              <Route path='services' element={ <Services />} />
-              <Route path='contact' element={ <Contact />} />
+              <Route path='/' exact element={ <Home />} />
+              <Route path='about' exact element={ <About />} />
+              <Route path='services' exact element={ <Services />} />
+              <Route path='contact' exact element={ <Contact />} />
             </Routes>
-          </Router>
-        </Layout>
+          </Layout>
+        </Router>
       </Fragment>
     );
   }

@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navitem = ( props ) => {
     return (
-        <li><a href={props.url}>{props.name}</a></li>
+        <li><Link to={props.url}>{props.name}</Link></li>
     )
 }
 
