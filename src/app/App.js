@@ -1,5 +1,5 @@
 import React, { Component, Fragment} from "react"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from "./layout/layout"
 import Home from "./components/pages/home"
 import About from "./components/pages/about"
@@ -13,12 +13,12 @@ class App extends Component{
       <Fragment>
         <Layout>
           <Router>
-            <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/about' component={About} />
-              <Route path='/services' component={Services} />
-              <Route path='/contact' component={Contact} />
-            </Switch>
+            <Routes>
+              <Route exact path='/' element={ <Home />} />
+              <Route path='about' element={ <About />} />
+              <Route path='services' element={ <Services />} />
+              <Route path='contact' element={ <Contact />} />
+            </Routes>
           </Router>
         </Layout>
       </Fragment>
