@@ -1,16 +1,11 @@
-import React from "react"
-import Navitem from "./navitem"
+import React, { Fragment} from "react"
+import Nav1 from "./nav/nav1"
 
 const Navbar = () => {
     return (
-        <div>
-            <ul>
-                <Navitem name='Home' url='/' />
-                <Navitem name='About' url='about' />
-                <Navitem name='Services' url='services' />
-                <Navitem name='Contact' url='contact' />
-            </ul>
-        </div>
+        <Fragment>
+            <Nav1 />
+        </Fragment>
     )
 }
 

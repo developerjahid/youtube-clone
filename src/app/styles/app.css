@@ -1,0 +1,14 @@
+
+/* ---- Header ---- */
+header {
+    background-image: url("../images/home/cover.webp");
+    background-size: cover;
+    align-items: center;
+}
+.cover {
+    height: 500px;
+}
+.intro {
+    padding-top: 250px;
+
+}
