@@ -10,7 +10,7 @@ const VideoDetails = ({ video }) => {
     return(
         <div className="videobox">
             <Card>
-                <iframe title="Youtube Player" width="560" height="315" src={srcVideo} />
+                <iframe title="Youtube Player" height="315" src={srcVideo} />
                 <CardBody>
                     <CardTitle><h6>{video.snippet.title}</h6></CardTitle>
                     <CardText>{video.snippet.description}</CardText>
