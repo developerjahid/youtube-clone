@@ -1,1 +1,2 @@
-React Starter for Developer Jahid.
+Youtube App by @developerjahid.
+Live link: https://dj-youtube.netlify.com/
