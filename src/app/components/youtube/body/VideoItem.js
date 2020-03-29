@@ -4,7 +4,7 @@ import { ListGroupItem } from 'reactstrap';
 const VideoItem = ({ video, onVideoSelect }) => {
     return(
         <Fragment>
-            <ListGroupItem onClick={() => onVideoSelect(video)} > 
+            <ListGroupItem className="videolist" onClick={() => onVideoSelect(video)} > 
                 <div className="float-left" >
 			      <img src={video.snippet.thumbnails.default.url} alt={video.snippet.title} />
 			    </div>
