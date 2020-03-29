@@ -1,16 +1,15 @@
 import React, { Fragment } from 'react'
-import { Link } from "react-router-dom"
 import { ListGroupItem } from 'reactstrap';
 
-const VideoItem = (props) => {
+const VideoItem = ({ video, onVideoSelect }) => {
     return(
         <Fragment>
-            <ListGroupItem>
-                <Link className="float-left man" to="/" >
-			      <img src={props.thumbnail} alt={props.title} />
-			    </Link>
+            <ListGroupItem onClick={() => onVideoSelect(video)} > 
+                <div className="float-left" >
+			      <img src={video.snippet.thumbnails.default.url} alt={video.snippet.title} />
+			    </div>
 			    <div>
-                    <h6>{props.title}</h6>
+                    <h6>{video.snippet.title}</h6>
 			    </div>
             </ListGroupItem>
         </Fragment>
