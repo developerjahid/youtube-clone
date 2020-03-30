@@ -22,7 +22,7 @@ class SearchBar extends Component {
         return(
             <Fragment>
                 <Container>
-                    <Row className="justify-content-center fixed-top">
+                    <Row className="justify-content-center">
                         <form onSubmit={this.onFormSubmit} className="col-12 col-md-10 col-lg-8">
                             <Row className="card-body no-gutters align-items-center">
                                 <Col>
